@@ -1,0 +1,305 @@
+html, body{
+    font-family: "Open Sans", Arial, sans-serif;
+}
+#main-content{
+    margin-top:80px;
+}
+#login, #register_form{
+    margin: 30px 5px;
+    padding: 20px 5px;
+}
+#album{
+    height:auto;
+    padding:3%;
+}
+#album{
+    /*background-color: black;*/
+    /*padding-bottom:10%;*/
+    height: auto;
+}
+#album h3, #album p{
+    color:gray;
+}
+.album-box, .photo-box, .post-box{
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    /*1border : thin solid #0000FF;
+    /*background-color: black;*/
+}
+.album-box a{
+    text-align: center;
+    display: block;
+    min-height: 100px;
+}
+#select_album{
+    border: 1px solid gray;
+    padding: 5px 1px;
+}
+#new-album{
+    /*padding-top:7px;
+    padding-bottom:7px;
+    margin-top:5px;
+    margin-bottom: 5px;*/
+}
+#add_photos, #your_gallery{
+    float:left;
+}
+#upload_Photos{
+    margin-left:0px;
+    margin-right: 0px;
+}
+#your_album{
+    padding-top: 50px;
+}
+#back_to_album{
+    float:right;
+    padding:5px;
+    margin:0px;
+}
+.del-album{
+    color: red;
+    float:right;
+    display: none;
+    /*align-items: flex-end;
+    text-align: right;*/
+}
+/******* Specially added for 5 column layout in large screen, to make it center aligned *******/
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .album-aln, .photo-aln, .blog-aln{
+        /*margin-left: 5%;*/
+        padding-bottom:40%;
+    }
+    .album-box.well, .photo-box.well{
+        margin:0%;
+    }
+    .post-box h4, .post-box p, .read-more-btn{
+        margin: 3% 3% 3% 3%;
+    }
+    .blog-aln{
+        margin: 1% 2% 1% 2%;
+        padding-bottom: 10%;
+    }
+    /*#album, #read_blog{
+        padding-bottom: 40%;
+    }*/
+    .modal-dialog {
+        width: 80%;
+        margin: 30px auto;
+    }
+    /*.photos-Body{
+        margin-left:5%;
+        width:95%;
+    }*/
+}
+/* Extra Small Devices, Phones */ 
+/*@media (min-width : 480px) {*/
+@media (max-width:767px) {
+    .album-aln, .photo-aln, .blog-aln{
+        /*margin-left: 5%;*/
+        padding-bottom:40%;
+    }
+    .album-box.well, .photo-box.well{
+        margin:0%;
+    }
+    .post-box h4, .post-box p, .read-more-btn{
+        margin: 3% 7% 3% 7%;
+    }
+    .blog-aln{
+        margin: 1% 2% 1% 2%;
+        padding-bottom: 10%;
+    }
+    /*#album, #read_blog{
+        padding-bottom: 40%;
+    }*/
+    .modal-dialog {
+        width: 80%;
+        margin: 30px auto;
+    }
+    /*.photos-Body{
+        margin-left:5%;
+        width:95%;
+    }*/
+}
+/* Small Devices, Tablets, Phones */ 
+@media (min-width : 768px) {
+    .album-aln, .photo-aln, .blog-aln{
+        /*margin-left: 2%;*/
+        padding-bottom:30%;
+    }
+    .album-box.well, .photo-box.well{
+        margin:0%;
+    }
+    .post-box h4, .post-box p, .read-more-btn{
+        margin: 3% 10% 3% 10%;
+    }
+    .blog-aln{
+        margin: 1% 2% 1% 2%;
+        padding-bottom: 10%;
+    }
+    /*#album, #read_blog{
+        padding-bottom: 40%;
+    }*/
+    .modal-dialog {
+        width: 75%;
+        margin: 30px auto;
+    }
+    /*.photos-Body{
+        margin-left:5%;
+        width:90%;
+    }*/
+}
+/* Medium Devices, Desktops */
+@media (min-width : 992px) {
+    .album-aln, .photo-aln, .blog-aln{
+        /*margin-left: 0%;*/
+        padding-bottom:20%;
+    }
+    .album-box.well, .photo-box.well{
+        margin:0%;
+    }
+    .post-box h4, .post-box p, .read-more-btn{
+        margin: 3% 13% 3% 13%;
+    }
+    .blog-aln{
+        margin: 1% 4% 1% 4%;
+        padding-bottom: 10%;
+    }
+    /*#album, #read_blog{
+        padding-bottom: 30%;
+    }*/
+    .modal-dialog {
+        width: 70%;
+        margin: 30px auto;
+    }
+    /*.photos-Body{
+        margin-left:10%;
+        width:90%;
+    }*/
+}
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+    .album-aln, .photo-aln{
+        /*margin-left: 13%;*/
+        padding-bottom: 10%;
+    }
+    .album-box.well, .photo-box.well{
+        margin:0%;
+    }
+    .post-box{
+        
+    }
+    .post-box h4, .post-box p, .read-more-btn{
+        margin: 3% 15% 3% 15%;
+    }
+    .blog-aln{
+        margin: 3% 8% 3% 8%;
+        padding-bottom: 10%;
+    }
+    /*#album,#read_blog{
+        padding-bottom: 20%;
+    }*/
+    .modal-dialog {
+        width: 65%;
+        margin: 30px auto;
+    }
+    /*.photos-Body{
+        margin-left:5%;
+        width:90%;
+    }*/
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.carousel-title{
+    text-align: center;
+    color : gray;
+}
+#carousel_Control_Left, #carousel_Control_Right{
+    background-color: #000;
+    
+}
+#modal_body{
+    background-color: black;
+}
+/* BLOG Styling Starts */
+.post-box h4{
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150ch;
+    height:40px;
+}
+#read_blog{
+    height:auto;
+    /*background-color: black;*/
+    /*padding:3%;*/
+    /*padding-bottom:30%;*/
+}
+/*#album h3, #album p, #album_3 h3, #album_3 p{*/
+#read_blog h3, #read_blog p{
+    color:gray;
+}
+
+/*.post-box{
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    /*border : thin solid #0000FF;
+}*/
+.post-Body{
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*max-width: 200ch;*/
+    height:100px;
+    /*max-width: 200px;*/
+}
+.read-more-btn{
+    /*margin-right:-1px;*/
+    text-align: right;
+    display: block;
+    min-height: 30px;
+}
+#new_post_content{
+    height:500px;
+    /*width:800px;*/
+}
+/* webkit solution */
+::-webkit-input-placeholder { 
+    text-align:left; 
+}
+/* mozilla solution */
+input:-moz-placeholder { 
+    text-align:left;
+}
+#post_comment{
+    padding-top: 3%;
+}
+#full_post_col{
+    display: none;
+}
+
+/* BLOG Styling Ends */
+/* USER Styling Starts */
+#user_sort{
+    margin: 10px;
+    padding:10px;
+}
+#sort_user{
+    border: 1px solid gray;
+    padding:5px;
+}
+.user-li{
+    font-size:14px;
+    padding:5px;
+    margin:5px;
+}
+.warning_msg{
+    font-weight: bold;
+}
+/* USER Styling Ends */
